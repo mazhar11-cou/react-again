@@ -1,15 +1,14 @@
 import Message from "./Message"
 import ListGroup from "./components/ListGroup"
+import Alert from "./components/Alert"
 
 function App() {
-    let iteams = ["New York", "San Fransisco", "Tokiyo", "London", "Paris"]
 
-    const handleSelectItem = (iteam:string)=>{
-        console.log(iteam)
-    }
     return (
-        <div>
-            <ListGroup iteams={iteams} heading = {'Cities'} onSelectItem={handleSelectItem}/>
+        <div >
+            <Alert>
+                Hello <span>world</span>
+            </Alert>
         </div>
     )
 }
